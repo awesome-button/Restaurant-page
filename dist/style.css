@@ -116,6 +116,7 @@ body {
     height: 440px;
     width: 340px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -124,11 +125,6 @@ body {
     width: 303px;
     background-size: cover;
 }
-
-/* .item img {
-    object-fit: cover;
-
-} */
 
 .item h2 {
     flex: 100%;
@@ -140,6 +136,7 @@ body {
     font-family: sans-serif;
     padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 @media all and (max-width: 800px) {
