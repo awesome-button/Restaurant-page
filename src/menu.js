@@ -23,9 +23,13 @@ function menu() {
         h2.innerText = types[i].Name;
         item.appendChild(h2);
 
-        let image = document.createElement('img');
-        image.setAttribute('src', `img/pizza${i+1}.png`);
-        item.appendChild(image);
+        let cont = document.createElement('div');
+        cont.setAttribute('class', 'image-container');
+        cont.style.backgroundImage = `url("img/pizza${i + 1}.png")`;
+        // let image = document.createElement('img');
+        // image.setAttribute('src', `img/pizza${i+1}.png`);
+        // cont.appendChild(image);
+        item.appendChild(cont);
         
         let p = document.createElement('p');
         p.innerText = `Ingredients: ${types[i].Ingredients}\nPrice: ${types[i].Price}`;
